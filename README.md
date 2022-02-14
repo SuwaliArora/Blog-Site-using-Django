@@ -38,6 +38,22 @@ Install dependencies:
 $ pip install -r requirements.txt
 ```
 
+## Installing	Django with pip
+
+Run	the	following command	at the shell prompt to install Django with pip:
+
+
+```bash
+pip install	Django==2.0.5
+```
+Check	whether	Django has been successfully installed.
+
+```bash
+>>> import django
+>>> django.get_version()
+    '2.0.5'
+```
+
 ## How to run
 
 ### Default
