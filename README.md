@@ -44,7 +44,7 @@ Run	the	following command	at the shell prompt to install Django with pip:
 
 
 ```bash
-pip install	Django==2.0.5
+pip install Django==2.0.5
 ```
 Check	whether	Django has been successfully installed.
 
@@ -67,7 +67,7 @@ Admin password: **adminpassword**
 Create an initial project file structure.
 
 ```bash
-$ django-admin startproject	mysite
+$ django-admin startproject mysite
 ```
 This will create a Django project with the name mysite which includes files namely:
 - manage.py
