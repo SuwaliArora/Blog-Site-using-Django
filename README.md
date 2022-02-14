@@ -54,23 +54,6 @@ Check	whether	Django has been successfully installed.
     '2.0.5'
 ```
 
-## How to run
-
-### Default
-
-You can run the application from the command line with manage.py.
-Go to the root folder of the application.
-
-Run migrations:
-```bash
-$ python manage.py migrate
-```
-
-Run server:
-```bash
-$ python manage.py runserver 
-```
-
 ## Post Installation
 
 Go to the web browser and visit `http://127.0.0.1:8000/`
@@ -78,6 +61,53 @@ Go to the web browser and visit `http://127.0.0.1:8000/`
 Admin username: **admin**
 
 Admin password: **adminpassword**
+
+## Creating project
+
+Create an initial project file structure.
+
+```bash
+$ django-admin startproject	mysite
+```
+This will create a Django project with the name mysite which includes files namely:
+- manage.py
+- __init__.py
+- settings.py
+- urls.py
+- wsgi.py
+
+To complete the project setup, we will need	to create the tables in the	database required by the applications listed in INSTALLED_APPS. Open the shell and run the following commands:
+
+```bash
+cd mysite
+python manage.py migrate
+```
+### Running the	development server
+You can run the application from the command line with manage.py.
+Go to the root folder of the application.
+
+Run server:
+```bash
+$ python manage.py runserver 
+```
+
+### Create the application blog within mysite project
+
+From the project's root	directory, Run the following command:
+```bash
+$ python manage.py startapp	blog
+```
+
+This will create the basic structure of the application, which includes files namely:
+__init__.py
+admin.py
+apps.py
+migrations/
+	__init__.py
+models.py
+tests.py
+views.py
+
 
 
 ## Helper Tools
@@ -92,10 +122,12 @@ Enter your desired username and press enter.
 ```bash
 Username: admin_username
 ```
+
 You will then be prompted for your desired email address:
 ```bash
 Email address: admin@example.com
 ```
+
 The final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
 ```bash
 Password: **********
