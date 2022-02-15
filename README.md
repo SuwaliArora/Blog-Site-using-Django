@@ -108,7 +108,9 @@ models.py
 tests.py
 views.py
 
+## Designing the blog data schema
 
+Design our blog data schema by defining the data models	for our blog. A	model is a Python class that subclasses django.db.models.Model,	in which each attribute	represents database field. Django will create a	table for each model defined in	the models.py file. When you create a model, Django provides you with a practical API to query objects in the database easily.
 
 ## Helper Tools
 
